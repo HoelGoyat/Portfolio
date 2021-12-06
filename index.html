@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+	<style>
+		:root{
+			/*Color_blue*/
+			--c_b0 : #96b3f1;
+			--c_b1 : #4879e0;
+			--c_b2 : #254485; 
+			--c_b3 : #0d2761;
+			--c_b4 : #3c31dd;;
+			/*Color Background*/
+			--c_back: #202731;
+		}
+
+		h1 {
+			font-size: 4rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+
+		li {
+			font-size: 1.5rem;
+		}
+		body {
+			margin: 0;
+			font-family: 'Prompt', sans-serif;
+			color: white;
+			background : var(--c_back);
+			overflow-x: hidden;
+		}
+
+		section {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-height: 400px;
+			padding-top: 100px;
+		}
+
+		.blue_0 {
+			background: var(--c_b0);
+		}
+
+		.blue_1 {
+			background: var(--c_b1);
+		}
+
+		.dark {
+			background: #0f0f10;
+		}
+
+		/* Curved bg with plain CSS */
+
+		.curve {
+			position: absolute;
+			height: 250px;
+			width: 100%;
+			bottom: 0;
+			text-align: center;
+		}
+
+		.curve::before {
+			content: '';
+			display: block;
+			position: absolute;
+			border-radius: 100% 50%;
+			width: 55%;
+			height: 100%;
+			transform: translate(85%, 60%);
+			background-color: hsl(216, 21%, 16%);
+		}
+
+		.curve::after {
+			content: '';
+			display: block;
+			position: absolute;
+			border-radius: 100% 50%;
+			width: 55%;
+			height: 100%;
+			background-color: var(--c_b1);
+			transform: translate(-4%, 40%);
+			z-index: -1;
+		}
+
+		/* Bubble bg with plain CSS */
+
+		.bubble::after {
+			content: '';
+			border-top-left-radius: 50% 35%;
+			border-top-right-radius: 50% 50%;
+			position: absolute;
+			bottom: 0;
+			z-index: -1;
+			width: 100%;
+			background-color: #0f0f10;
+			height: 85%;
+		}
+
+		/* Curved bg with SVG via https://www.shapedivider.app/ */
+
+		.wave {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+			line-height: 0;
+		}
+
+		.wave svg {
+			position: relative;
+			display: block;
+			width: calc(103% + 1.3px);
+			height: 262px;
+		}
+
+		.wave .shape-fill {
+			fill: hsl(240, 3%, 6%);
+		}
+
+		/* SVG background image via https://haikei.app/ */
+
+		.spacer {
+			aspect-ratio: 2;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.layer1 {
+			background-image: url('./blue_layers1.svg');
+		}
+
+		.layer2 {
+			background-image: url('./layer2.svg');
+		}
+
+		.flip {
+			transform: rotate(180deg);
+		}
+
+		/* Blobs SVG background image via https://haikei.app/ */
+
+		.blob-motion {
+			position: absolute;
+			transform: translateY(-20%);
+			z-index: 0;
+		}
+
+		.blob-content {
+			z-index: 1;
+		}
+
+		.blobs {
+			width: 100%;
+			background: url('./blobs.svg') no-repeat bottom / cover;
+		}
+	</style>
+	</head>
+	<body>
+
+		<!-- Fond noir-->
+		<section >
+			<h1>Mon Portfolio</h1>
+			<p>Bienvenue sur mon portfolio.</p>
+		</section>
+		<!-- Transition vers cb_0-->
+		<div class="spacer layer1 flip"></div>
+
+		<section class="blue_0">
+			<h1>Mon profil</h1>
+			<!-- Mettre photo dans cette section-->
+			<p>Je suis étudiant en École d'Ingénieurs Informatique et Réseaux à la recherche d'une alternance.</p>
+			<p>Je me passionne pour l'Informatique, les nouvelles technologies et dans cette optique je compte <br>
+ 				faire carrière dans l'Intelligence Articielle.
+			</p>
+		</section>
+		<!-- spacer-->
+		<div class="spacer layer1"></div>
+		<section>
+			<h1>Mes Formations et diplômes</h1>
+			<ul>
+				<li>École d'ingénieur de l'ESAIP
+					<ul><li>Semestre Erasmus+ à KVK en Lituanie</li></ul>
+				</li>
+				<li>Licence Professionnelle Conception de Solution Décisionnelles</li>
+				<li>DUT Informatique</li>
+			</ul>
+			<div class="curves"></div>
+		</section>
+		<section>
+			<h1>Expérience Professionnelle</h1>
+			<ul>
+				<li>Stage de Développement WEB Python Flask</li>
+				<ul>
+					<li>2 mois en Lituanie</li>
+				</ul>
+				<li>Alternance avec Licence Professionnelle en Business Intelligence</li>
+				<ul>
+					<li>1 an à Vannes</li>
+				</ul>
+				<li>Stage de Développement fin de DUT WEB Django</li>
+				<ul>
+					<li>10 semaines à Lannion</li>
+				</ul>
+			</ul>
+		</section>
+
+		<section>
+			<h1>Compétences</h1>
+			<h2>Languages</h2>
+			<ul>
+				<li>Python</li>
+				<li>C</li>
+				<li>Java</li>
+				<li>PHP, CSS, HTML, JavaScript</li>
+				<li>Rust</li>
+			</ul>
+			<h2>Langues</h2>
+			<ul>
+				<li>Français (Langue Maternelle)</li>
+				<li>Anglais 960 points au TOIEC</li>
+				<li>Allemand, niveau B1 d'ici décembre</li>
+			</ul>
+		</section>
+
+		<section>
+			<h1>Projets Étudiants</h1>
+			<p></p>
+			<h2>Design4Green</h2>
+			<p>...</p>
+		</section>
+
+		<section>
+
+			<h1>Connaissances</h1>
+			<ul>
+				<li>Gestion de projet : Méthodes agiles et classiques</li>
+				<li>Communication en équipe : Aide à la gestion et force de proposition</li>
+				<li>Conception de logiciels : compréhension des besoins, rédaction des spécifications techniques et production de la solution</li>
+				<li>Mise en place de chaînes de traitement de données : récupération, traitement, stockage, restitution avec des tableaux de bords et analyse des données</li>
+				<li>Business Intelligence</li>
+				<li>Droit de l'Informatique : Connaissance du RGPD</li>
+			</ul>
+		</section>
+
+		<section>
+			<h1>À propos de moi</h1>
+			<h2>Centres d'intérêts</h2>
+			<ul>
+				<li>Théâtre : improvisation et texte en association amateur</li>
+				<li>Littérature : principalement fantastique et de Science Fiction</li>
+				<li>Dessins : expositions amatrices sur campus étudiants</li>
+			</ul>
+			<h2>Motivations</h2>
+			<ul>
+				<li>Créer et maintenir des logiciels</li>
+				<li>Participer dans une équipe</li>
+				<li>Gagner de l’expérience professionnelle</li>
+				<li>Contribuer à des projets informatiques</li>
+			</ul>
+		</section>
+
+			
+		<section class="blobs">
+			<h1>Contacts</h1>
+			<p>A website is like a road. The more curves it has the more interesting it is.</p>
+		</section>
+	</body>
+</html>
