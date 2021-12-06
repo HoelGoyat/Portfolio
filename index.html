@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 	<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 	<style>
-		:root{
+		:root {
 			/*Color_blue*/
-			--c_b0 : #96b3f1;
-			--c_b1 : #4879e0;
-			--c_b2 : #254485; 
-			--c_b3 : #0d2761;
-			--c_b4 : #3c31dd;;
+			--c_b0: #96b3f1;
+			--c_b1: #4879e0;
+			--c_b2: #254485;
+			--c_b3: #0d2761;
+			--c_b4: #3c31dd;
+			;
 			/*Color Background*/
 			--c_back: #202731;
 		}
@@ -24,6 +26,7 @@
 		h1 {
 			font-size: 4rem;
 		}
+
 		p {
 			font-size: 1.5rem;
 		}
@@ -31,11 +34,12 @@
 		li {
 			font-size: 1.5rem;
 		}
+
 		body {
 			margin: 0;
 			font-family: 'Prompt', sans-serif;
 			color: white;
-			background : var(--c_back);
+			background: var(--c_back);
 			overflow-x: hidden;
 		}
 
@@ -163,9 +167,9 @@
 			z-index: 1;
 		}
 
-		.blobs {
+		.poly {
 			width: 100%;
-			background: url('./blobs.svg') no-repeat bottom / cover;
+			background: url('./img/svgs/blue_1_polygons.svg') no-repeat bottom / cover;
 		}
 
 		.custom-shape-divider-top-1638819963 {
@@ -188,122 +192,158 @@
 			fill: #4879E0;
 		}
 	</style>
-	</head>
-	<body>
+</head>
 
-		<!-- Fond noir-->
-		<section >
-			<h1>Mon Portfolio</h1>
-			<p>Bienvenue sur mon portfolio.</p>
-		</section>
-		<!-- Transition vers cb_0-->
-		<div class="spacer layer1 flip"></div>
+<body>
 
-		<section class="blue_0">
-			<h1>Mon profil</h1>
-			<!-- Mettre photo dans cette section-->
-			<p>Je suis étudiant en École d'Ingénieurs Informatique et Réseaux à la recherche d'une alternance.</p>
-			<p>Je me passionne pour l'Informatique, les nouvelles technologies et dans cette optique je compte <br>
- 				faire carrière dans l'Intelligence Articielle.
-			</p>
-		</section>
-		<!-- spacer-->
-		<div class="spacer layer1"></div>
-		<section>
-			<h1>Mes Formations et diplômes</h1>
-			<ul>
-				<li>École d'ingénieur de l'ESAIP
-					<ul><li>Semestre Erasmus+ à KVK en Lituanie</li></ul>
-				</li>
-				<li>Licence Professionnelle Conception de Solution Décisionnelles</li>
-				<li>DUT Informatique</li>
-			</ul>
-		</section>
-		<section>
-			<div class="curve flip blue_1"></div>
-		</section>
-		<section class="blue_1">
-			
-			<h1>Expérience Professionnelle</h1>
-			<ul>
-				<li>Stage de Développement WEB Python Flask</li>
+	<!-- Fond noir-->
+	<section>
+		<h1>Mon Portfolio</h1>
+		<p>Bienvenue sur mon portfolio.</p>
+	</section>
+	<!-- Transition vers cb_0-->
+	<div class="spacer layer1 flip"></div>
+
+	<section class="blue_0">
+		<h1>Mon profil</h1>
+		<!-- Mettre photo dans cette section-->
+		<p>Je suis étudiant en École d'Ingénieurs Informatique et Réseaux à la recherche d'une alternance.</p>
+		<p>Je me passionne pour l'Informatique, les nouvelles technologies et dans cette optique je compte <br>
+			faire carrière dans l'Intelligence Articielle.
+		</p>
+	</section>
+	<!-- spacer-->
+	<div class="spacer layer1"></div>
+	<section>
+		<h1>Mes Formations et diplômes</h1>
+		<ul>
+			<li>École d'ingénieur de l'ESAIP
 				<ul>
-					<li>2 mois en Lituanie</li>
+					<li>Semestre Erasmus+ à KVK en Lituanie</li>
 				</ul>
-				<li>Alternance avec Licence Professionnelle en Business Intelligence</li>
-				<ul>
-					<li>1 an à Vannes</li>
-				</ul>
-				<li>Stage de Développement fin de DUT WEB Django</li>
-				<ul>
-					<li>10 semaines à Lannion</li>
-				</ul>
-			</ul>
-		</section>
-		<section>
-			<div class="custom-shape-divider-top-1638819963">
-				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-					<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-				</svg>
-			</div>
-			<h1>Compétences</h1>
-			<h2>Languages</h2>
-			<ul>
-				<li>Python</li>
-				<li>C</li>
-				<li>Java</li>
-				<li>PHP, CSS, HTML, JavaScript</li>
-				<li>Rust</li>
-			</ul>
-			<h2>Langues</h2>
-			<ul>
-				<li>Français (Langue Maternelle)</li>
-				<li>Anglais 960 points au TOIEC</li>
-				<li>Allemand, niveau B1 d'ici décembre</li>
-			</ul>
-		</section>
+			</li>
+			<li>Licence Professionnelle Conception de Solution Décisionnelles</li>
+			<li>DUT Informatique</li>
+		</ul>
+	</section>
+	<section>
+		<div class="curve flip blue_1"></div>
+	</section>
+	<section class="blue_1">
 
-		<section class="bubble">
-			<h1>Projets Étudiants</h1>
-			<p></p>
-			<h2>Design4Green</h2>
-			<p>...</p>
-		</section>
-		<section class="bubble flip"></section>
-		<section>
-
-			<h1>Connaissances</h1>
+		<h1>Expérience Professionnelle</h1>
+		<ul>
+			<li>Stage de Développement WEB Python Flask</li>
 			<ul>
-				<li>Gestion de projet : Méthodes agiles et classiques</li>
-				<li>Communication en équipe : Aide à la gestion et force de proposition</li>
-				<li>Conception de logiciels : compréhension des besoins, rédaction des spécifications techniques et production de la solution</li>
-				<li>Mise en place de chaînes de traitement de données : récupération, traitement, stockage, restitution avec des tableaux de bords et analyse des données</li>
-				<li>Business Intelligence</li>
-				<li>Droit de l'Informatique : Connaissance du RGPD</li>
+				<li>2 mois en Lituanie</li>
 			</ul>
-		</section>
-
-		<section>
-			<h1>À propos de moi</h1>
-			<h2>Centres d'intérêts</h2>
+			<li>Alternance avec Licence Professionnelle en Business Intelligence</li>
 			<ul>
-				<li>Théâtre : improvisation et texte en association amateur</li>
-				<li>Littérature : principalement fantastique et de Science Fiction</li>
-				<li>Dessins : expositions amatrices sur campus étudiants</li>
+				<li>1 an à Vannes</li>
 			</ul>
-			<h2>Motivations</h2>
+			<li>Stage de Développement fin de DUT WEB Django</li>
 			<ul>
-				<li>Créer et maintenir des logiciels</li>
-				<li>Participer dans une équipe</li>
-				<li>Gagner de l’expérience professionnelle</li>
-				<li>Contribuer à des projets informatiques</li>
+				<li>10 semaines à Lannion</li>
 			</ul>
-		</section>
+		</ul>
+	</section>
+	<section>
+		<div class="custom-shape-divider-top-1638819963">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+				preserveAspectRatio="none">
+				<path
+					d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+					class="shape-fill"></path>
+			</svg>
+		</div>
+		<h1>Compétences</h1>
+		<h2>Languages</h2>
+		<ul>
+			<li>Python</li>
+			<li>C</li>
+			<li>Java</li>
+			<li>PHP, CSS, HTML, JavaScript</li>
+			<li>Rust</li>
+		</ul>
+		<h2>Langues</h2>
+		<ul>
+			<li>Français (Langue Maternelle)</li>
+			<li>Anglais 960 points au TOIEC</li>
+			<li>Allemand, niveau B1 d'ici décembre</li>
+		</ul>
+	</section>
 
-			
-		<section class="blobs">
-			<h1>Contacts</h1>
-			<p>A website is like a road. The more curves it has the more interesting it is.</p>
-		</section>
-	</body>
+	<section class="bubble">
+		<h1>Projets Étudiants</h1>
+		<p></p>
+		<h2>Design4Green</h2>
+		<p>...</p>
+	</section>
+	<section class="bubble flip"></section>
+	<section>
+
+		<h1>Connaissances</h1>
+		<ul>
+			<li>Gestion de projet : Méthodes agiles et classiques</li>
+			<li>Communication en équipe : Aide à la gestion et force de proposition</li>
+			<li>Conception de logiciels : compréhension des besoins, rédaction des spécifications techniques et
+				production de la solution</li>
+			<li>Mise en place de chaînes de traitement de données : récupération, traitement, stockage, restitution avec
+				des tableaux de bords et analyse des données</li>
+			<li>Business Intelligence</li>
+			<li>Droit de l'Informatique : Connaissance du RGPD</li>
+		</ul>
+	</section>
+
+	<section>
+		<h1>À propos de moi</h1>
+		<h2>Centres d'intérêts</h2>
+		<ul>
+			<li>Théâtre : improvisation et texte en association amateur</li>
+			<li>Littérature : principalement fantastique et de Science Fiction</li>
+			<li>Dessins : expositions amatrices sur campus étudiants</li>
+		</ul>
+		<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+			<g xmlns="http://www.w3.org/2000/svg" transform="translate(477.03197538698987 304.3160212653649)">
+				<path id="blob1"
+					d="M101.3 -202.2C115.9 -167 101.8 -108.8 119.8 -71.3C137.8 -33.8 187.9 -16.9 199.4 6.6C210.9 30.2 183.8 60.3 161.8 90.9C139.8 121.5 122.9 152.6 96.8 166C70.7 179.4 35.3 175.2 7.4 162.4C-20.5 149.5 -41 128 -80 122C-118.9 116 -176.4 125.5 -191.6 107.8C-206.9 90 -179.9 45 -170.7 5.3C-161.5 -34.3 -169.9 -68.7 -160.1 -95.8C-150.3 -122.9 -122.1 -142.9 -92.4 -169.4C-62.7 -195.9 -31.3 -228.9 6 -239.3C43.3 -249.7 86.7 -237.4 101.3 -202.2"
+					fill="#4879e0" />
+			</g>
+			<g xmlns="http://www.w3.org/2000/svg" transform="translate(523.1307927040497 267.1356325873004)" style="visibility: hidden">
+				<path id="blob2"
+					d="M54.4 -110.7C75 -82.3 99.4 -76.9 114 -62.3C128.6 -47.7 133.3 -23.8 134.9 0.9C136.5 25.7 134.9 51.3 128.8 80.6C122.7 109.9 112.1 142.9 89.9 168.2C67.7 193.5 33.8 211.3 -2.3 215.3C-38.5 219.4 -77 209.7 -116 194C-154.9 178.4 -194.4 156.7 -211 123.3C-227.6 90 -221.3 45 -216.2 2.9C-211.2 -39.2 -207.3 -78.3 -188.6 -107.9C-169.8 -137.5 -136.2 -157.5 -102.3 -178.3C-68.3 -199 -34.2 -220.5 -8.6 -205.5C16.9 -190.6 33.8 -139.1 54.4 -110.7"
+					fill="#4879e0" />
+			</g>
+			<g xmlns="http://www.w3.org/2000/svg" transform="translate(503.3433977715513 283.96914681511817)"style="visibility: hidden">
+				<path id="blob3"
+					d="M112.8 -204.1C135.6 -182.2 136.2 -130.6 130.6 -91.6C125 -52.7 113.1 -26.3 124.2 6.4C135.3 39.2 169.4 78.3 174 115.4C178.5 152.5 153.5 187.5 119.6 190.6C85.7 193.7 42.8 164.9 -0.8 166.3C-44.5 167.7 -89 199.5 -108.2 187.9C-127.4 176.3 -121.3 121.4 -139 82.9C-156.8 44.3 -198.4 22.2 -213.8 -8.9C-229.3 -40 -218.6 -80 -199.1 -115.5C-179.6 -151 -151.3 -182 -116.6 -197C-82 -212 -41 -211 2 -214.5C45 -217.9 90 -225.9 112.8 -204.1" fill="#4879e0"/>
+			</g>
+		</svg>
+		<script>
+			const tween = KUTE.fromTo(
+				'#blob1',
+				{ path: '#blob1' },
+				{ path: '#blob2' },
+				//{ path: '#blob3' },
+				//The third blob is not working =/
+				{ repeat: 10, duration: 5000, yoyo: true }
+			).start();
+		</script>
+		<h2>Motivations</h2>
+		<ul>
+			<li>Créer et maintenir des logiciels</li>
+			<li>Participer dans une équipe</li>
+			<li>Gagner de l’expérience professionnelle</li>
+			<li>Contribuer à des projets informatiques</li>
+		</ul>
+	</section>
+
+
+	<section class="poly">
+		<h1>Contacts</h1>
+		<p>A website is like a road. The more curves it has the more interesting it is.</p>
+	</section>
+</body>
+
 </html>
