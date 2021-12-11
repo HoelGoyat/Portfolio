@@ -27,8 +27,15 @@
 			font-size: 4rem;
 		}
 
+		h2 {
+			font-size: 2.5rem;
+		}
+
 		p {
-			font-size: 1.5rem;
+			text-align: center;
+			font-size: 2rem;
+			margin-left : 5.5rem;
+			margin-right : 5.5rem;
 		}
 
 		li {
@@ -52,6 +59,12 @@
 			padding-top: 100px;
 		}
 
+		img {
+			float : left;
+		}
+		.content {
+			float : right;
+		}
 		.blue_0 {
 			background: var(--c_b0);
 		}
@@ -206,11 +219,16 @@
 
 	<section class="blue_0">
 		<h1>Mon profil</h1>
+		<img src="./img/profile.png" alt="Profile Picture Missing"
+			width="20%"
+		>
 		<!-- Mettre photo dans cette section-->
-		<p>Je suis étudiant en École d'Ingénieurs Informatique et Réseaux à la recherche d'une alternance.</p>
-		<p>Je me passionne pour l'Informatique, les nouvelles technologies et dans cette optique je compte <br>
-			faire carrière dans l'Intelligence Articielle.
-		</p>
+		<div class="content">			
+			<p>Je suis étudiant en École d'Ingénieurs Informatique et Réseaux à la recherche d'une alternance.</p>
+			<p>Je me passionne depuis des années pour l'Informatique, les nouvelles technologies
+				<br> et dans cette optique je compte faire carrière dans l'Intelligence Articielle.
+			</p>
+		</div>
 	</section>
 	<!-- spacer-->
 	<div class="spacer layer1"></div>
@@ -232,20 +250,38 @@
 	<section class="blue_1">
 
 		<h1>Expérience Professionnelle</h1>
-		<ul>
-			<li>Stage de Développement WEB Python Flask</li>
+			
+			<h2>Stage de Développement WEB Python Flask</h2>
 			<ul>
-				<li>2 mois en Lituanie</li>
+				<li>2 mois en Lituanie, Klaipeda</li>
+				<li>Pendant mon séjour Erasmus en Lituanie j'ai eu la chance de trouver un stage rémunéré
+					<br>dans le développement WEB sous le framework Python Flask
+					<br>Mes missions ont inclue :
+					<ul>
+						<li>Le développement intégral d'une petite application d'administration</li>
+						<li>Assistance d'un développeur dans un second projet, correction de bugs,
+							<br>optimisation de code, documentation,
+							<br>amener de l'expertise et un second opinion.
+						</li>
+					</ul> 
+				</li>
 			</ul>
-			<li>Alternance avec Licence Professionnelle en Business Intelligence</li>
+			<h2>Alternance avec Licence Professionnelle en Business Intelligence</h2>
 			<ul>
 				<li>1 an à Vannes</li>
+				<li>En liens avec ma Licence Professionnelle, j'ai fais une alternance d'un an dans l'entreprise
+					<br><a href="https://herakles-erp.com/">HERAKLES</a>.
+					<br>J'ai travaillé à la conception d'une solution de Business Intelligence avec la mise en place
+					<br>de Data Warehouses et de travail sur des BDDs.
+				</li>
 			</ul>
-			<li>Stage de Développement fin de DUT WEB Django</li>
+			<h2>Stage de Développement fin de DUT WEB Django</h2>
 			<ul>
 				<li>10 semaines à Lannion</li>
+				<li>Pour ma de fin de DUT, j'ai fait un stage de développement WEB sous le framework Python Django.
+					<br>Mon travail consistait en la création d'une application de gestion de tests automatisés.
+				</li>
 			</ul>
-		</ul>
 	</section>
 	<section>
 		<div class="custom-shape-divider-top-1638819963">
@@ -343,6 +379,7 @@
 	<section class="poly">
 		<h1>Contacts</h1>
 		<p>Vous pouvez me contacter à l'adresse <a href="hgoyat.ir2023@esaip.org">hgoyat.ir2023@esaip.org</a></p>
+		<p>Ou sur ma page <a href="https://www.linkedin.com/in/hoel-goyat/">Linkedin</a></p>
 	</section>
 </body>
 
